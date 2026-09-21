@@ -33,10 +33,8 @@ def admission_price(age):
 def sum_multiples(limit):
     total = 0
     for i in range(limit):
-        if i %3 == 0:
-            total += 3
-        if i %5 ==0:
-            total += 5
+        if i %3 == 0 or i % 5 == 0:
+            total += i
    
     # TODO (Part 3): return the sum of every whole number below `limit`
     #   that is a multiple of 3 or of 5
